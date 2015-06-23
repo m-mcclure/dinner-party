@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Guests-->
         <scene sceneID="fy5-eZ-5WQ">
             <objects>
                 <viewController id="mqw-VV-nkO" sceneMemberID="viewController">
@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="6QP-W9-Jm1"/>
+                    <tabBarItem key="tabBarItem" title="Guests" image="Flaticon_33308" id="6QP-W9-Jm1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0k-CK-ppu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934.5" y="1353.75"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="CiG-dG-I4d">
             <objects>
                 <viewController id="L7R-WU-mq1" customClass="HomeViewController" customModule="Dinner_Party" customModuleProvider="target" sceneMemberID="viewController">
@@ -459,7 +459,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="nPq-jO-A0r"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="RcdKn4dMi" id="nPq-jO-A0r"/>
                     <connections>
                         <outlet property="upcomingEvent1" destination="Aq0-4F-6jq" id="vnU-oQ-qbO"/>
                         <outlet property="upcomingEvent2" destination="MJN-ct-ZqM" id="Koy-hE-Rs4"/>
@@ -475,11 +475,12 @@
         <scene sceneID="v89-iv-G4h">
             <objects>
                 <tabBarController id="lWz-Mq-syl" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="9fU-za-uaJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="L7R-WU-mq1" kind="relationship" relationship="viewControllers" id="03c-NI-3zI"/>
@@ -491,12 +492,11 @@
             </objects>
             <point key="canvasLocation" x="46.5" y="954"/>
         </scene>
-        <!--Item 2-->
+        <!--Events-->
         <scene sceneID="bU6-F8-cK4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PAG-iv-Pba" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8So-nL-qqk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="L6S-40-htj"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="forkSpoon" id="L6S-40-htj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4c1-8g-OaO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -507,14 +507,16 @@
                         <segue destination="AQt-0W-sKz" kind="relationship" relationship="rootViewController" id="73L-ND-Xtu"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAG-iv-Pba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1870.5" y="954"/>
         </scene>
-        <!--All Events Table View Controller-->
+        <!--Events-->
         <scene sceneID="PiS-3T-6ST">
             <objects>
                 <tableViewController id="AQt-0W-sKz" customClass="AllEventsTableViewController" customModule="Dinner_Party" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="e3C-IK-CXv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -530,7 +532,9 @@
                             <outlet property="delegate" destination="AQt-0W-sKz" id="26i-65-NTT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3jU-Sm-zlj"/>
+                    <navigationItem key="navigationItem" title="Events" id="3jU-Sm-zlj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="eHs-xR-X4G"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjH-LU-lBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -538,6 +542,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Flaticon_33308" width="30" height="30"/>
+        <image name="RcdKn4dMi" width="30" height="30"/>
+        <image name="forkSpoon" width="30" height="30"/>
         <image name="verticalDPartyLogo" width="825" height="197"/>
     </resources>
 </document>

@@ -14,6 +14,7 @@
 		343F86521B389D6400F5DE19 /* Dinner_PartyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F86511B389D6400F5DE19 /* Dinner_PartyTests.swift */; };
 		343F865F1B38A27C00F5DE19 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F865E1B38A27C00F5DE19 /* Gradient.swift */; };
 		343F86651B38B4E400F5DE19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F86641B38B4E400F5DE19 /* HomeViewController.swift */; };
+		34D8EC9C1B392D2E007F428C /* Ingredients.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34D8EC9B1B392D2E007F428C /* Ingredients.plist */; };
 		34E0FA531B38D324009E0A7D /* AllEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA521B38D324009E0A7D /* AllEventsTableViewController.swift */; };
 		34E0FA551B38D475009E0A7D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA541B38D475009E0A7D /* Event.swift */; };
 		34E0FA571B38DA03009E0A7D /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA561B38DA03009E0A7D /* Guest.swift */; };
@@ -42,6 +43,7 @@
 		343F86511B389D6400F5DE19 /* Dinner_PartyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinner_PartyTests.swift; sourceTree = "<group>"; };
 		343F865E1B38A27C00F5DE19 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		343F86641B38B4E400F5DE19 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		34D8EC9B1B392D2E007F428C /* Ingredients.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ingredients.plist; sourceTree = "<group>"; };
 		34E0FA521B38D324009E0A7D /* AllEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEventsTableViewController.swift; sourceTree = "<group>"; };
 		34E0FA541B38D475009E0A7D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		34E0FA561B38DA03009E0A7D /* Guest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				343F863A1B389D6300F5DE19 /* Info.plist */,
 				343F865E1B38A27C00F5DE19 /* Gradient.swift */,
+				34D8EC9B1B392D2E007F428C /* Ingredients.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				343F86411B389D6300F5DE19 /* Main.storyboard in Resources */,
 				343F86461B389D6400F5DE19 /* LaunchScreen.xib in Resources */,
 				343F86431B389D6300F5DE19 /* Images.xcassets in Resources */,
+				34D8EC9C1B392D2E007F428C /* Ingredients.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
