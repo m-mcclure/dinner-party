@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6CC0F6FD-A7D9-42C0-989E-5A47844CA0DC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Dinner Party</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BD5FE4A69C7A14CAE34B92D0309C6BE585A9D451</key>
 		<string>https://github.com/mcclure15/dinner-party.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Dinner Party/Dinner Party.xcodeproj</string>
+	<string>Dinner Party/Dinner Party.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BD5FE4A69C7A14CAE34B92D0309C6BE585A9D451</key>

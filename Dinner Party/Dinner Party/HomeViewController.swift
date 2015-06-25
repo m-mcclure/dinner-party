@@ -25,14 +25,15 @@ class HomeViewController: UIViewController {
       let background = CAGradientLayer().colorFade()
       background.frame = self.view.bounds
       self.view.layer.insertSublayer(background, atIndex: 0)
-      upcomingEvent1.layer.borderColor =  UIColor.whiteColor().CGColor
-      upcomingEvent1.layer.borderWidth = 0.3
-      upcomingEvent2.layer.borderColor =  UIColor.whiteColor().CGColor
-      upcomingEvent2.layer.borderWidth = 0.3
-      upcomingEvent3.layer.borderColor =  UIColor.whiteColor().CGColor
-      upcomingEvent3.layer.borderWidth = 0.3
-      upcomingEvent4.layer.borderColor =  UIColor.whiteColor().CGColor
-      upcomingEvent4.layer.borderWidth = 0.3
+      self.view.backgroundColor = UIColor(patternImage: UIImage(named: "forkSpoonFull.png")!)
+//      upcomingEvent1.layer.borderColor =  UIColor.whiteColor().CGColor
+//      upcomingEvent1.layer.borderWidth = 0.3
+//      upcomingEvent2.layer.borderColor =  UIColor.whiteColor().CGColor
+//      upcomingEvent2.layer.borderWidth = 0.3
+//      upcomingEvent3.layer.borderColor =  UIColor.whiteColor().CGColor
+//      upcomingEvent3.layer.borderWidth = 0.3
+//      upcomingEvent4.layer.borderColor =  UIColor.whiteColor().CGColor
+//      upcomingEvent4.layer.borderWidth = 0.3
     }
 
     override func didReceiveMemoryWarning() {
