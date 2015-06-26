@@ -9,19 +9,21 @@
 
 import Foundation
 
-class Guest {
-  var name: String
+class Contact {
+  var firstName: String
+  var lastName: String
   var email: String
   var phoneNumber: String
-  var guestPhoto = "blankman.jpg"
+  var contactPhoto = "blankman.jpg"
   var allergies = [Ingredient]()
   var likes = [Ingredient]()
   var dislikes = [Ingredient]()
   
-  init(name: String, email: String, phoneNumber: String, guestPhoto: String){
-    self.name = name
+  init(first: String, last: String, email: String, phoneNumber: String, contactPhoto: String){
+    self.firstName = first
+    self.lastName = last 
     self.email = email
     self.phoneNumber = phoneNumber
-    self.guestPhoto = guestPhoto
+    self.contactPhoto = contactPhoto
   }
 }

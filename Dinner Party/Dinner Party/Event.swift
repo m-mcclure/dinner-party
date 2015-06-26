@@ -10,17 +10,13 @@ import Foundation
 
 class Event {
   var name: String
-  var eventDate: NSDate
+  var eventDate: String
   var location: String
-  var eventStartTime: String
-  var guests = [Guest]()
+  var guests = [Contact]()
   
-  init(name: String, eventDate: NSDate, location: String, eventStartTime: String){
+  init(name: String, eventDate: String, location: String){
     self.name = name
     self.eventDate = eventDate
     self.location = location
-    self.eventStartTime = eventStartTime
   }
-  
-  
 }

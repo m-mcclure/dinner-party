@@ -1,34 +1,32 @@
 //
-//  AllEventsTableViewController.swift
+//  AddContactTableViewController.swift
 //  Dinner Party
 //
-//  Created by Matthew McClure on 6/22/15.
+//  Created by Matthew McClure on 6/25/15.
 //  Copyright (c) 2015 Matthew McClure. All rights reserved.
 //
 
 import UIKit
 
-class AllEventsTableViewController: UITableViewController {
-  
-  var eventsList = [Event]()
+class AddContactTableViewController: UITableViewController {
 
+  @IBAction func cancel(sender: UIBarButtonItem) {
+    dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  @IBAction func done(sender: UIBarButtonItem) {
+    dismissViewControllerAnimated(true, completion: nil)
+  }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-      loadSampleEvents()
-      for event in eventsList {
-        println(event.name)
-      }
-      
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-  
-  func loadSampleEvents(){
-    let event1 = Event(name: "Friday Night Fish Fry", eventDate: "July 24th, 7:00pm" , location: "Grandmother and Papa's")
-    let event2 = Event(name: "Thanksgiving", eventDate: "November 25, 6:00pm", location: "Aunt Jane's")
-    let event3 = Event(name: "Payton's Birthday", eventDate: "October 3, 7:30pm", location: "84 Vine Grove Lane")
-    eventsList.append(event1)
-    eventsList.append(event2)
-    eventsList.append(event3)
-  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -46,31 +44,18 @@ class AllEventsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return eventsList.count
+        return 5
     }
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("eventCell", forIndexPath: indexPath) as! UITableViewCell
-        let indexPath = indexPath.row
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+
         // Configure the cell...
-        cell.textLabel!.text = eventsList[indexPath].name
-        cell.detailTextLabel!.text = eventsList[indexPath].eventDate
+
         return cell
     }
-  
-  
-  // how to load from plist with multiple data types??
-//  private func loadEventsFromPlist(){
-//    if let eventPath = NSBundle.mainBundle().pathForResource("SampleEvents", ofType: "plist"),
-//      eventObjects = NSArray(contentsOfFile: eventPath) as? [[String : String]]{
-//        for event in eventObjects {
-//          if let name = event["Name"],
-//             date = NSDate((event["Date"])), location = event["Location"], invitedGuests = event["InvitedGuests"]{
-//              let event = Event(name: name, eventDate: date, location: location)
-//          }
-//        }
-//    }
-//  }
+    */
 
     /*
     // Override to support conditional editing of the table view.

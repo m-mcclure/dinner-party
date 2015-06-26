@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GuestsTableViewController: UITableViewController {
+class ContactsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

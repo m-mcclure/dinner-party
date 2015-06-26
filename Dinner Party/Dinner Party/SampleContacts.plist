@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>thelma</key>
+	<dict>
+		<key>ContactPhoto</key>
+		<string>thelma</string>
+		<key>PhoneNumber</key>
+		<string>9017564847</string>
+		<key>Email</key>
+		<string>thelma@mcclure.com</string>
+		<key>LastName</key>
+		<string>McClure</string>
+		<key>FirstName</key>
+		<string>Thelma</string>
+	</dict>
+	<key>john</key>
+	<dict>
+		<key>ContactPhoto</key>
+		<string>john</string>
+		<key>PhoneNumber</key>
+		<string>9017564847</string>
+		<key>Email</key>
+		<string>john@mcclure.com</string>
+		<key>LastName</key>
+		<string>McClure</string>
+		<key>FirstName</key>
+		<string>John</string>
+	</dict>
+	<key>jane</key>
+	<dict>
+		<key>ContactPhoto</key>
+		<string>jane</string>
+		<key>PhoneNumber</key>
+		<string>9017555555</string>
+		<key>Email</key>
+		<string>janejosey@aol.com</string>
+		<key>LastName</key>
+		<string>Josey</string>
+		<key>FirstName</key>
+		<string>Jane</string>
+	</dict>
+</dict>
+</plist>
