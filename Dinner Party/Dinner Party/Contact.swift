@@ -7,19 +7,19 @@
 //  Copyright (c) 2015 Matthew McClure. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Contact {
   var firstName: String
   var lastName: String
   var email: String
   var phoneNumber: String
-  var contactPhoto = "blankman.jpg"
-  var allergies = [Ingredient]()
-  var likes = [Ingredient]()
-  var dislikes = [Ingredient]()
+  var contactPhoto: UIImage?
+//  var allergies = [Ingredient]()
+//  var likes = [Ingredient]()
+//  var dislikes = [Ingredient]()
   
-  init(first: String, last: String, email: String, phoneNumber: String, contactPhoto: String){
+  init(first: String, last: String, email: String, phoneNumber: String, contactPhoto: UIImage){
     self.firstName = first
     self.lastName = last 
     self.email = email

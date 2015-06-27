@@ -9,16 +9,27 @@
 import UIKit
 
 class ContactsTableViewController: UITableViewController {
+  
+  var contactsList = [Contact]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadSampleContacts()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+  
+  func loadSampleContacts(){
+    let johnImage = UIImage(named: "papa")
+    let john = Contact(first: "John", last: "McClure", email: "john@mcclure.com", phoneNumber: "9017564847", contactPhoto: johnImage!)
+    contactsList.append(john)
+    let thelmaImage = UIImage(named: "grandmother")
+    let thelma = Contact(first: "Thelma", last: "McClure", email: "thelma@mcclure.com", phoneNumber: "9018578380", contactPhoto: thelmaImage!)
+    contactsList.append(thelma)
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -30,24 +41,28 @@ class ContactsTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return contactsList.count
     }
 
-    /*
+  
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("contactCell", forIndexPath: indexPath) as! UITableViewCell
+      let indexPath = indexPath.row
         // Configure the cell...
-
+      let fullName = "\(contactsList[indexPath].firstName)" + " \(contactsList[indexPath].lastName)"
+        cell.textLabel!.text = fullName
+        cell.imageView!.image = contactsList[indexPath].contactPhoto
+      cell.imageView!.layer.cornerRadius = 22.0
+      cell.imageView!.layer.masksToBounds = true
         return cell
     }
-    */
+  
 
     /*
     // Override to support conditional editing of the table view.
