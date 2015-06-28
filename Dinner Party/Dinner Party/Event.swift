@@ -13,6 +13,9 @@ class Event {
   var eventDate: String
   var location: String
   var guests = [Contact]()
+  var offLimits = [Ingredient]()
+  var avoidIfPossible = [Ingredient]()
+  var menuSuggestions = [Ingredient]()
   
   init(name: String, eventDate: String, location: String){
     self.name = name

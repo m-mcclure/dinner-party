@@ -11,10 +11,15 @@ import Foundation
 
 class Ingredient {
   var name: String
-  var foodGroup: String
+  //var foodGroup: String
+  var checked = false
   
-  init(name: String, foodGroup: String){
+  func toggleChecked() {
+    checked = !checked
+  }
+  
+  init(name: String/*, foodGroup: String*/){
     self.name = name
-    self.foodGroup = foodGroup 
+    //self.foodGroup = foodGroup
   }
 }

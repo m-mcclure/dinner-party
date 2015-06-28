@@ -22,6 +22,7 @@
 		3482271B1B3CECDB00D6B09B /* SampleContacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3482271A1B3CECDB00D6B09B /* SampleContacts.plist */; };
 		3482271D1B3CEE8C00D6B09B /* SampleEvents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3482271C1B3CEE8C00D6B09B /* SampleEvents.plist */; };
 		3482271F1B3CF23200D6B09B /* AddContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482271E1B3CF23200D6B09B /* AddContactTableViewController.swift */; };
+		34C09F811B3FA75400BD5950 /* SelectAllergiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C09F801B3FA75400BD5950 /* SelectAllergiesTableViewController.swift */; };
 		34D8EC9C1B392D2E007F428C /* Ingredients.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34D8EC9B1B392D2E007F428C /* Ingredients.plist */; };
 		34E0FA531B38D324009E0A7D /* AllEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA521B38D324009E0A7D /* AllEventsTableViewController.swift */; };
 		34E0FA551B38D475009E0A7D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA541B38D475009E0A7D /* Event.swift */; };
@@ -59,6 +60,7 @@
 		3482271A1B3CECDB00D6B09B /* SampleContacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleContacts.plist; sourceTree = "<group>"; };
 		3482271C1B3CEE8C00D6B09B /* SampleEvents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleEvents.plist; sourceTree = "<group>"; };
 		3482271E1B3CF23200D6B09B /* AddContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactTableViewController.swift; sourceTree = "<group>"; };
+		34C09F801B3FA75400BD5950 /* SelectAllergiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAllergiesTableViewController.swift; sourceTree = "<group>"; };
 		34D8EC9B1B392D2E007F428C /* Ingredients.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ingredients.plist; sourceTree = "<group>"; };
 		34E0FA521B38D324009E0A7D /* AllEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEventsTableViewController.swift; sourceTree = "<group>"; };
 		34E0FA541B38D475009E0A7D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				343F86641B38B4E400F5DE19 /* HomeViewController.swift */,
 				34E0FA521B38D324009E0A7D /* AllEventsTableViewController.swift */,
+				34C09F801B3FA75400BD5950 /* SelectAllergiesTableViewController.swift */,
 				340AB1491B3CC3DE00664212 /* ContactsTableViewController.swift */,
 				3482271E1B3CF23200D6B09B /* AddContactTableViewController.swift */,
 				348227181B3CEC5000D6B09B /* SelectGuestsTableViewController.swift */,
@@ -291,6 +294,7 @@
 				34E0FA591B38DD34009E0A7D /* Ingredient.swift in Sources */,
 				34E0FA571B38DA03009E0A7D /* Contact.swift in Sources */,
 				3449AB6A1B3CAB94001B7454 /* Quote.swift in Sources */,
+				34C09F811B3FA75400BD5950 /* SelectAllergiesTableViewController.swift in Sources */,
 				34E0FA531B38D324009E0A7D /* AllEventsTableViewController.swift in Sources */,
 				343F865F1B38A27C00F5DE19 /* Gradient.swift in Sources */,
 				34E0FA551B38D475009E0A7D /* Event.swift in Sources */,
