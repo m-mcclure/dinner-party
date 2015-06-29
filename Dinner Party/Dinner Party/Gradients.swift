@@ -25,4 +25,22 @@ extension CAGradientLayer {
     return gradientLayer
   }
   
+  func lightColorFade() -> CAGradientLayer {
+    
+    let topColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1)
+    let bottomColor = UIColor(red: 206/255.0, green: 206/255.0, blue: 206/255.0, alpha: 1)
+    let gradientColors: [CGColor] = [topColor.CGColor, bottomColor.CGColor]
+    let gradientLocations = [0.0, 1.0]
+    
+    let gradientLayer: CAGradientLayer = CAGradientLayer()
+    gradientLayer.colors = gradientColors
+    gradientLayer.locations = gradientLocations
+    
+    
+    return gradientLayer
+  }
+  
+  
+  
+  
 }

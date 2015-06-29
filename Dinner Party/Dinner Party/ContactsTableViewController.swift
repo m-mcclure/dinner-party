@@ -8,19 +8,27 @@
 
 import UIKit
 
-class ContactsTableViewController: UITableViewController {
+class ContactsTableViewController: UITableViewController, UITableViewDataSource {
   
   var contactsList = [Contact]()
+  var newContact: Contact!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      tableView.rowHeight = 50
         loadSampleContacts()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.tableView.reloadData()
+  }
   
   func loadSampleContacts(){
     let johnImage = UIImage(named: "papa")
@@ -49,20 +57,49 @@ class ContactsTableViewController: UITableViewController {
         // Return the number of rows in the section.
         return contactsList.count
     }
-
   
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("contactCell", forIndexPath: indexPath) as! UITableViewCell
       let indexPath = indexPath.row
         // Configure the cell...
-      let fullName = "\(contactsList[indexPath].firstName)" + " \(contactsList[indexPath].lastName)"
-        cell.textLabel!.text = fullName
-        cell.imageView!.image = contactsList[indexPath].contactPhoto
-      cell.imageView!.layer.cornerRadius = 22.0
+      
+      let personToDisplay = contactsList[indexPath]
+      let fullName = "\(personToDisplay.firstName)" + " \(personToDisplay.lastName)"
+      cell.textLabel!.text = fullName
+        cell.imageView!.image = personToDisplay.contactPhoto
+      cell.imageView!.layer.cornerRadius = 24.0
       cell.imageView!.layer.masksToBounds = true
         return cell
     }
   
+  override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    if (editingStyle == UITableViewCellEditingStyle.Delete) {
+      let indexPath = indexPath.row
+      contactsList.removeAtIndex(indexPath)
+      viewWillAppear(true)
+      for contact in contactsList {
+        println(contact.firstName)
+      }
+    }
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "AddContact" {
+      let destination = segue.destinationViewController as! UINavigationController
+      let addContactViewController = destination.topViewController as! AddContactViewController
+      println("segue works")
+      addContact()
+      addContactViewController.passedNewContact = newContact
+      addContactViewController.passedContactsList = contactsList
+    }
+  }
+  
+  func addContact()-> Contact {
+    let blankman = UIImage(named: "blankman")
+    newContact = Contact(first: "", last: "", email: "", phoneNumber: "", contactPhoto: blankman!)
+    contactsList.append(newContact)
+    return newContact
+  }
 
     /*
     // Override to support conditional editing of the table view.

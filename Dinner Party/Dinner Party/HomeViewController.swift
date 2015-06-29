@@ -8,13 +8,19 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UINavigationControllerDelegate {
+  
+  var newContact: Contact!
   
   @IBAction func createEvent(sender: UIButton) {
-//    performSegueWithIdentifier("AddEvent", sender: self)
+//    let blankman = UIImage(named: "blankman")
+//    newContact = Contact(first: "", last: "", email: "", phoneNumber: "", contactPhoto: blankman!)
+//    contactsList.append(newContact)
+//    return newContact
   }
   
   @IBAction func createContact(sender: UIButton) {
+    
   }
   
     override func viewDidLoad() {
@@ -30,7 +36,20 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+  
+  
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "AddContact" {
+      let addContactViewController = segue.destinationViewController as! AddContactViewController
+      println("segue worked")
+      
+      let blankman = UIImage(named: "blankman")
+      let newContact = Contact(first: "ummj", last: "", email: "", phoneNumber: "", contactPhoto: blankman!)
+      
+      addContactViewController.passedNewContact = newContact
+    }
+  }
 
     /*
     // MARK: - Navigation

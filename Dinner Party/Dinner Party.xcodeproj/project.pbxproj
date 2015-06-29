@@ -9,25 +9,29 @@
 /* Begin PBXBuildFile section */
 		340AB14A1B3CC3DE00664212 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340AB1491B3CC3DE00664212 /* ContactsTableViewController.swift */; };
 		343F863C1B389D6300F5DE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F863B1B389D6300F5DE19 /* AppDelegate.swift */; };
-		343F86411B389D6300F5DE19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343F863F1B389D6300F5DE19 /* Main.storyboard */; };
 		343F86431B389D6300F5DE19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343F86421B389D6300F5DE19 /* Images.xcassets */; };
 		343F86461B389D6400F5DE19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 343F86441B389D6300F5DE19 /* LaunchScreen.xib */; };
 		343F86521B389D6400F5DE19 /* Dinner_PartyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F86511B389D6400F5DE19 /* Dinner_PartyTests.swift */; };
-		343F865F1B38A27C00F5DE19 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F865E1B38A27C00F5DE19 /* Gradient.swift */; };
+		343F865F1B38A27C00F5DE19 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F865E1B38A27C00F5DE19 /* Gradients.swift */; };
 		343F86651B38B4E400F5DE19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F86641B38B4E400F5DE19 /* HomeViewController.swift */; };
 		3449AB6A1B3CAB94001B7454 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449AB691B3CAB94001B7454 /* Quote.swift */; };
 		3449AB6C1B3CAC23001B7454 /* Quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3449AB6B1B3CAC23001B7454 /* Quotes.plist */; };
+		3473A4591B40A1C8003B375B /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473A4581B40A1C8003B375B /* AddContactViewController.swift */; };
 		348227171B3CE04600D6B09B /* AddEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348227161B3CE04600D6B09B /* AddEventTableViewController.swift */; };
 		348227191B3CEC5000D6B09B /* SelectGuestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348227181B3CEC5000D6B09B /* SelectGuestsTableViewController.swift */; };
 		3482271B1B3CECDB00D6B09B /* SampleContacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3482271A1B3CECDB00D6B09B /* SampleContacts.plist */; };
 		3482271D1B3CEE8C00D6B09B /* SampleEvents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3482271C1B3CEE8C00D6B09B /* SampleEvents.plist */; };
 		3482271F1B3CF23200D6B09B /* AddContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482271E1B3CF23200D6B09B /* AddContactTableViewController.swift */; };
-		34C09F811B3FA75400BD5950 /* SelectAllergiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C09F801B3FA75400BD5950 /* SelectAllergiesTableViewController.swift */; };
+		34A81BA11B3FC8A100497DA7 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A81BA01B3FC8A100497DA7 /* EventTableViewController.swift */; };
+		34A95BD51B40CA1A00DD19D5 /* SelectAllergiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A95BD41B40CA1A00DD19D5 /* SelectAllergiesViewController.swift */; };
+		34C09F851B3FBC7300BD5950 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C09F841B3FBC7300BD5950 /* ContactTableViewController.swift */; };
 		34D8EC9C1B392D2E007F428C /* Ingredients.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34D8EC9B1B392D2E007F428C /* Ingredients.plist */; };
 		34E0FA531B38D324009E0A7D /* AllEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA521B38D324009E0A7D /* AllEventsTableViewController.swift */; };
 		34E0FA551B38D475009E0A7D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA541B38D475009E0A7D /* Event.swift */; };
 		34E0FA571B38DA03009E0A7D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA561B38DA03009E0A7D /* Contact.swift */; };
 		34E0FA591B38DD34009E0A7D /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FA581B38DD34009E0A7D /* Ingredient.swift */; };
+		34EC593F1B41B13400D28DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EC593E1B41B13400D28DAE /* Main.storyboard */; };
+		34EC59411B41B5AF00D28DAE /* SetAllergiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC59401B41B5AF00D28DAE /* SetAllergiesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,27 +49,31 @@
 		343F86361B389D6300F5DE19 /* Dinner Party.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dinner Party.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		343F863A1B389D6300F5DE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		343F863B1B389D6300F5DE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		343F86401B389D6300F5DE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		343F86421B389D6300F5DE19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		343F86451B389D6400F5DE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		343F864B1B389D6400F5DE19 /* Dinner PartyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dinner PartyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		343F86501B389D6400F5DE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		343F86511B389D6400F5DE19 /* Dinner_PartyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinner_PartyTests.swift; sourceTree = "<group>"; };
-		343F865E1B38A27C00F5DE19 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		343F865E1B38A27C00F5DE19 /* Gradients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		343F86641B38B4E400F5DE19 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3449AB691B3CAB94001B7454 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		3449AB6B1B3CAC23001B7454 /* Quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Quotes.plist; sourceTree = "<group>"; };
+		3473A4581B40A1C8003B375B /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		348227161B3CE04600D6B09B /* AddEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventTableViewController.swift; sourceTree = "<group>"; };
 		348227181B3CEC5000D6B09B /* SelectGuestsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGuestsTableViewController.swift; sourceTree = "<group>"; };
 		3482271A1B3CECDB00D6B09B /* SampleContacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleContacts.plist; sourceTree = "<group>"; };
 		3482271C1B3CEE8C00D6B09B /* SampleEvents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleEvents.plist; sourceTree = "<group>"; };
 		3482271E1B3CF23200D6B09B /* AddContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactTableViewController.swift; sourceTree = "<group>"; };
-		34C09F801B3FA75400BD5950 /* SelectAllergiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAllergiesTableViewController.swift; sourceTree = "<group>"; };
+		34A81BA01B3FC8A100497DA7 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		34A95BD41B40CA1A00DD19D5 /* SelectAllergiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAllergiesViewController.swift; sourceTree = "<group>"; };
+		34C09F841B3FBC7300BD5950 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		34D8EC9B1B392D2E007F428C /* Ingredients.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ingredients.plist; sourceTree = "<group>"; };
 		34E0FA521B38D324009E0A7D /* AllEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEventsTableViewController.swift; sourceTree = "<group>"; };
 		34E0FA541B38D475009E0A7D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		34E0FA561B38DA03009E0A7D /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		34E0FA581B38DD34009E0A7D /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		34EC593E1B41B13400D28DAE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		34EC59401B41B5AF00D28DAE /* SetAllergiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetAllergiesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 				343F86381B389D6300F5DE19 /* Dinner Party */,
 				343F864E1B389D6400F5DE19 /* Dinner PartyTests */,
 				343F86371B389D6300F5DE19 /* Products */,
+				34EC59421B41B8B500D28DAE /* discards */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,7 +130,7 @@
 		343F86391B389D6300F5DE19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				343F865E1B38A27C00F5DE19 /* Gradient.swift */,
+				343F865E1B38A27C00F5DE19 /* Gradients.swift */,
 				343F863A1B389D6300F5DE19 /* Info.plist */,
 				3482271A1B3CECDB00D6B09B /* SampleContacts.plist */,
 				3482271C1B3CEE8C00D6B09B /* SampleEvents.plist */,
@@ -151,7 +160,7 @@
 		343F865B1B389E0100F5DE19 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				343F863F1B389D6300F5DE19 /* Main.storyboard */,
+				34EC593E1B41B13400D28DAE /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -161,11 +170,13 @@
 			children = (
 				343F86641B38B4E400F5DE19 /* HomeViewController.swift */,
 				34E0FA521B38D324009E0A7D /* AllEventsTableViewController.swift */,
-				34C09F801B3FA75400BD5950 /* SelectAllergiesTableViewController.swift */,
-				340AB1491B3CC3DE00664212 /* ContactsTableViewController.swift */,
-				3482271E1B3CF23200D6B09B /* AddContactTableViewController.swift */,
-				348227181B3CEC5000D6B09B /* SelectGuestsTableViewController.swift */,
 				348227161B3CE04600D6B09B /* AddEventTableViewController.swift */,
+				340AB1491B3CC3DE00664212 /* ContactsTableViewController.swift */,
+				3473A4581B40A1C8003B375B /* AddContactViewController.swift */,
+				34EC59401B41B5AF00D28DAE /* SetAllergiesTableViewController.swift */,
+				34A81BA01B3FC8A100497DA7 /* EventTableViewController.swift */,
+				34C09F841B3FBC7300BD5950 /* ContactTableViewController.swift */,
+				348227181B3CEC5000D6B09B /* SelectGuestsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +190,16 @@
 				3449AB691B3CAB94001B7454 /* Quote.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		34EC59421B41B8B500D28DAE /* discards */ = {
+			isa = PBXGroup;
+			children = (
+				34A95BD41B40CA1A00DD19D5 /* SelectAllergiesViewController.swift */,
+				3482271E1B3CF23200D6B09B /* AddContactTableViewController.swift */,
+			);
+			name = discards;
+			path = "Dinner Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				343F86411B389D6300F5DE19 /* Main.storyboard in Resources */,
+				34EC593F1B41B13400D28DAE /* Main.storyboard in Resources */,
 				3482271B1B3CECDB00D6B09B /* SampleContacts.plist in Resources */,
 				343F86461B389D6400F5DE19 /* LaunchScreen.xib in Resources */,
 				3482271D1B3CEE8C00D6B09B /* SampleEvents.plist in Resources */,
@@ -287,16 +308,20 @@
 			files = (
 				348227171B3CE04600D6B09B /* AddEventTableViewController.swift in Sources */,
 				348227191B3CEC5000D6B09B /* SelectGuestsTableViewController.swift in Sources */,
+				34C09F851B3FBC7300BD5950 /* ContactTableViewController.swift in Sources */,
 				3482271F1B3CF23200D6B09B /* AddContactTableViewController.swift in Sources */,
+				34A81BA11B3FC8A100497DA7 /* EventTableViewController.swift in Sources */,
+				34EC59411B41B5AF00D28DAE /* SetAllergiesTableViewController.swift in Sources */,
 				343F86651B38B4E400F5DE19 /* HomeViewController.swift in Sources */,
 				343F863C1B389D6300F5DE19 /* AppDelegate.swift in Sources */,
 				340AB14A1B3CC3DE00664212 /* ContactsTableViewController.swift in Sources */,
 				34E0FA591B38DD34009E0A7D /* Ingredient.swift in Sources */,
 				34E0FA571B38DA03009E0A7D /* Contact.swift in Sources */,
 				3449AB6A1B3CAB94001B7454 /* Quote.swift in Sources */,
-				34C09F811B3FA75400BD5950 /* SelectAllergiesTableViewController.swift in Sources */,
 				34E0FA531B38D324009E0A7D /* AllEventsTableViewController.swift in Sources */,
-				343F865F1B38A27C00F5DE19 /* Gradient.swift in Sources */,
+				3473A4591B40A1C8003B375B /* AddContactViewController.swift in Sources */,
+				34A95BD51B40CA1A00DD19D5 /* SelectAllergiesViewController.swift in Sources */,
+				343F865F1B38A27C00F5DE19 /* Gradients.swift in Sources */,
 				34E0FA551B38D475009E0A7D /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		343F863F1B389D6300F5DE19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				343F86401B389D6300F5DE19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		343F86441B389D6300F5DE19 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -429,7 +446,7 @@
 				INFOPLIST_FILE = "Dinner Party/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -440,7 +457,7 @@
 				INFOPLIST_FILE = "Dinner Party/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
